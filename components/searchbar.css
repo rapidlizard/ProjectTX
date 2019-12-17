@@ -1,0 +1,314 @@
+
+
+p {
+    margin: 0;
+}
+
+body {
+    background-color: #555555;
+    margin: 0;
+}
+
+/*Search Bar*/
+
+#searchbar {
+    display: flex;
+    width: 800px;
+}
+
+#searchInput {
+    width: 360px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #ffffff;
+    font-size: 24px;
+}
+
+#searchInput::-webkit-search-cancel-button {
+    position:relative;
+    right:5px;  
+
+    -webkit-appearance: none;
+    background-image: url(/home/lizard/Desktop/TX/images/delete.svg);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 15px;
+}
+
+
+#searchTags {
+    width: 230px;
+    height: 50px;
+    background-color: #ffffff;
+    color: #000;
+    border: 2px solid #000000;
+    font-size: 24px;
+}
+
+#searchGo {
+    width: 184px;
+    height: 50px;
+    border-radius: 0 10px 10px 0;
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    font-size: 24px;
+}
+
+#searchGo:active {
+    background-color: #333333;
+    transform: translateY(1px);
+}
+
+#searchIcon {
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    padding: 13px 10px;
+    background-color: #ffffff;
+}
+
+
+#input {
+    display: flex;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 230px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0px 0px 10px 10px;
+    border: 2px solid black;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 18px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+#tags:hover .dropdown-content {
+    display: block;
+}
+
+/*End of search Bar code/
+
+
+/*Login Banner*/
+
+#headerBanner {
+    background-color: rgba(255,255,255,0.9);
+    padding: 20px;
+    width: 380px;
+    height: 700px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 85%, 0 100%);
+}
+
+#headerBanner h3 {
+    color: black;
+    font-size: 26px;
+    margin: 5px 0 10px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+#headerBanner input {
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 1px solid black;
+    padding: 0 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+#headerBanner button {
+    width: 150px;
+    height: 40px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+#headerBanner h4 {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+#headerBanner #checkBox {
+    margin-top: 10px;
+    width: 13px;
+    height: 13px;
+}
+
+#check {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+#register:active {
+    transform: translateY(1px);
+}
+/*End of Login*/
+
+/*navbar*/
+#nav {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.navitem {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    border-right: 3px solid black;
+    padding: 5px 5px;
+    width: 150px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+#lngDropDown {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    border-left: 3px solid black;
+    padding: 5px 5px;
+    width: 115px;
+    text-align: center;
+
+}
+
+#home {
+    border-left: 3px solid black;
+    margin-left: 10px;
+}
+
+.navitem:hover {
+    background-color: black;
+    color: white;
+}
+
+#idioma {
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 10px;
+    border-right: 3px solid black;
+}
+
+#idioma img {
+    width: 15px;
+    height: auto;
+    margin-right: 15px;
+}
+
+#idioma:hover {
+    background-color: #bdbdbd;
+}
+
+/*Nav bar 2*/
+
+#nav2 {
+    margin: 40px 0;
+}
+
+.navItem2 {
+    text-align: center;
+}
+
+#navBar2 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    padding: 15px 0;
+}
+
+.navIcon {
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+hr {
+    height: 5px;
+    background-color: #ffffff;
+}
+
+.navText {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}/*End of Nav2*/
+
+/*Footer*/
+
+footer {
+    display: flex;
+    color: #ffffff;
+    background-color: black;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    line-height: 30px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#FooterLinks {
+    display: flex;
+}
+
+.footerLinks {
+    margin-right: 20px;
+}
+
+#FooterLeft {
+    position: relative;
+    top: 25px;
+}
+
+#FooterLogo {
+    text-decoration: none;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+footer p {
+    text-decoration: underline;
+}/*End of Footer*/

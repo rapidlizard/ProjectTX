@@ -1,0 +1,775 @@
+/*general*/
+body {
+    margin: 0;
+    background-color: black;
+}
+
+p {
+    margin: 0;
+}
+
+/*header bar*/
+#divHeader{
+    display: flex;
+    position: relative;
+    padding: 10px 0px ;
+    background-color: black;
+   
+}
+#divHeader h1{
+    color:white;
+    margin: 0;
+    padding-left: 15px;
+    font-family:'Roboto', sans-serif;
+    font-weight: 1000;
+}
+#divSearch{
+    position: absolute;
+    right:15px;
+}
+#SearcherH{
+    height: 30px;
+    width: 250px;
+    border-radius: 10px;
+    border: 1px black;
+    padding: 0 10px;
+}
+#SearcherH::-webkit-search-cancel-button{ 
+    -webkit-appearance: none;
+    background-image: url(/home/lizard/Desktop/TX/images/delete.svg);
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    height: 10px;
+    width: 10px;
+}
+#divButtons{
+    position: absolute;
+    right: 300px;
+}
+#loguinH{
+    height: 30px;
+    border-radius: 10px;
+    border-bottom-right-radius:500px;
+    background-color: white;
+    width: 120px;
+    border-radius: 10px 0px 0px 10px;
+    clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+    position: relative;
+    left: 35px;
+    border: 1px black;
+}
+#registerH{
+    height: 30px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius:500px;
+    background-color: white;
+    width: 120px;
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+    border-radius: 0px 10px 10px 0px;
+    border: 1px black;
+}/*End of header bar*/
+
+
+
+/*Nav Bar*/
+#nav {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.navitem {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    border-right: 3px solid black;
+    padding: 5px 5px;
+    width: 150px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+#lngDropDown {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    border-left: 3px solid black;
+    padding: 5px 5px;
+    width: 115px;
+    text-align: center;
+
+}
+
+#home {
+    border-left: 3px solid black;
+    margin-left: 10px;
+}
+
+.navitem:hover {
+    background-color: black;
+    color: white;
+}
+
+#idioma {
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 10px;
+    border-right: 3px solid black;
+}
+
+#idioma img {
+    width: 15px;
+    height: auto;
+    margin-right: 15px;
+}
+
+#idioma:hover {
+    background-color: #bdbdbd;
+}/*End of Nav Bar*/
+
+
+
+/*Header Image and line*/
+#backgroundImage{
+    background-image: url(/home/lizard/Desktop/TX/images/fondobcn.jpg);
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    z-index: 100;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#shadowRight {
+    box-shadow: inset 59px -3px 70px -21px rgba(0,0,0,0.92);
+}
+
+#shadowLeft {
+    box-shadow: inset -59px -3px 70px -21px rgba(0,0,0,0.92);
+}
+
+.Separador{
+    background-color: white;
+    height: 5px;
+    margin: 0;
+}/*End of Header Image and line*/
+
+
+
+/*search Bar + Login position*/
+#imageOverLay{
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    top: 700px;
+}
+
+
+
+/*Search Bar*/
+#searchbar {
+    display: flex;
+    width: 800px;
+    
+}
+
+#searchInput {
+    width: 360px;
+    height: 70px;
+    border-radius: 10px 0 0 10px;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #ffffff;
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+#searchInput::-webkit-search-cancel-button {
+    position:relative;
+    right:5px;  
+
+    -webkit-appearance: none;
+    background-image: url(/home/lizard/Desktop/TX/images/delete.svg);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 15px;
+}
+
+
+#searchTags {
+    width: 230px;
+    height: 70px;
+    background-color: #ffffff;
+    color: #555555;
+    border: 2px solid #000000;
+    font-size: 24px;
+}
+
+#searchGo {
+    width: 184px;
+    height: 70px;
+    border-radius: 0 10px 10px 0;
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-left: 2px solid black;
+    font-size: 24px;
+}
+
+#searchGo:active {
+    background-color: #333333;
+    transform: translateY(1px);
+}
+
+#searchIcon {
+    width: 30px;
+    height: 26px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    padding: 20px 10px;
+    background-color: #ffffff;
+}
+
+#input {
+    display: flex;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 230px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0px 0px 10px 10px;
+    border: 2px solid black;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 18px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+#tags:hover .dropdown-content {
+    display: block;
+}/*End of search bar*/
+
+
+
+/*login banner*/
+#headerBanner {
+    background-color: rgba(255,255,255,0.9);
+    padding: 20px;
+    width: 380px;
+    height: 700px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 85%, 0 100%);
+    position: relative;
+    top: -180px;
+}
+
+#headerBanner h3 {
+    color: black;
+    font-size: 26px;
+    margin: 5px 0 10px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+#headerBanner input {
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 1px solid black;
+    padding: 0 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+#headerBanner button {
+    width: 150px;
+    height: 40px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+#headerBanner h4 {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+#headerBanner #checkBox {
+    margin-top: 10px;
+    width: 13px;
+    height: 13px;
+}
+
+#check {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+#register:active {
+    transform: translateY(1px);
+}/* End of Login banner*/
+
+
+
+/*How It Works */
+#HowItWorks {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 15vw;
+    margin-top: 40px;
+}
+#HowItWorks hr{
+    margin: 0 7px;
+}
+#titulo{
+    display: flex;
+    margin-bottom: 40px;
+    color: white;
+}
+#TituloHowIt{
+    margin:0;
+    font-size: 50px;
+}
+.HrHowItWorks{
+    width: 175px;
+    height:3px ;
+    background-color: white;
+    margin: 0;
+    position: relative;
+    top: 27px;
+}
+.paso{
+    display: flex;
+    margin-bottom: 130px;
+    position: relative;
+}
+.Circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+    margin-right: 29px; 
+}
+#ImgCircle1{
+    width: 50px;
+    height: auto;
+    position: relative;
+    left: 15px;
+    top: 15px;
+}
+#ImgCircle2{
+    width: 50px;
+    height: auto;
+    position: relative;
+    left: 13px;
+    top: 15px; 
+}
+#ImgCircle3{
+    width: 50px;
+    height: auto;
+    position: relative;
+    left: 13px;
+    top: 15px; 
+}
+.PPasos{
+    width: 600px;
+    padding-top: 5px;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#arrowAnim {
+    width: 5vw;
+    height: 5vh;
+    transform: rotate(-90deg);
+    position: relative;
+    left: 8px;
+    top: 25px;
+}
+.arrow {
+    width: 0.30vw;
+    height: 0.30vw;
+    border: 0.3vw solid;
+    border-color: white transparent transparent white;
+    transform: rotate(-45deg);
+}
+.arrowSliding {
+    position: absolute;
+    -webkit-animation: slide 4s linear infinite; 
+    animation: slide 4s linear infinite;
+}
+.delay1 {
+    -webkit-animation-delay: 1s; 
+    animation-delay: 1s;
+}
+.delay2 {
+    -webkit-animation-delay: 2s; 
+    animation-delay: 2s;
+}
+.delay3 {
+    -webkit-animation-delay: 3s; 
+    animation-delay: 3s;
+}
+  
+@-webkit-keyframes slide {
+    0% { opacity:0; transform: translateX(5vw); }   
+    20% { opacity:1; transform: translateX(2vw); }  
+    80% { opacity:1; transform: translateX(-2vw); } 
+    100% { opacity:0; transform: translateX(-5vw); }    
+}
+  @keyframes slide {
+    0% { opacity:0; transform: translateX(5vw); }   
+    20% { opacity:1; transform: translateX(2vw); }  
+    80% { opacity:1; transform: translateX(-2vw); } 
+    100% { opacity:0; transform: translateX(-5vw); }    
+}/*End of How it Works*/
+
+
+/*image*/
+#meetingImage {
+    width: 801px;
+    height: 534px;
+}
+
+#imgEvents{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+/*Nav bar 2*/
+#nav2 {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    top: 2170px;
+}
+
+.navItem2 {
+    text-align: center;
+}
+
+#navBar2 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    padding: 15px 0;
+}
+
+.navIcon {
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+hr {
+    height: 5px;
+    background-color: #ffffff;
+}
+
+.navText {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}/*End of Nav2*/
+
+/* TESTIMONIOS */
+.titleText{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    
+}
+#testemonios {
+    display: flex;
+    justify-content: space-evenly;
+}
+.fondo{
+    background-color: black;
+}
+.tarjeta{
+    width: 380px;
+    height: 356px;
+    background-color: white;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 162px;
+}
+.cliente{
+    position: relative;
+    border-radius: 50%;
+    width: 241px;
+    height: 226px;
+    margin: -155px;
+    z-index: 1;
+    left: 220px;
+    bottom: 70px;
+}
+.nombre{
+    text-indent: 72px;
+    padding-top: 74px;
+    color: black;
+    margin: 11px;
+    margin-bottom: 6px;
+    font-family: 'Roboto', sans-serif;
+}
+.caja{
+    background-color: black;
+    width: 318px;
+    height: 204px;
+    position: absolute;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: white;
+    margin-left: 5px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    padding: 0px;
+}
+.text{
+    margin: 0px;
+    
+}
+.descripcion{
+    padding: 0px 18px;
+    color: white;
+}
+.cplus{
+    width: 37px;
+    height: 42px;
+    float: right;
+    display: block;
+    margin-right: 0px;
+    margin-left: 329px;
+    margin-top: -61px;
+    position: absolute;
+}
+.python{
+    width: 37px;
+    height: 42px;
+    float: right;
+    display: block;
+    margin-right: 0px;
+    margin-left: 329px;
+    margin-top: 53px;
+    position: absolute;
+}
+.php{
+    width: 37px;
+    height: 42px;
+    float: right;
+    display: block;
+    margin-right: 0px;
+    margin-left: 329px;
+    margin-top: 155px;
+    position: absolute;
+}/* End of TESTIMONIOS */
+
+
+
+/*EVENTS*/
+.events{
+    width: 432px;
+    height: 746px;
+    background-color: black;
+    border-color: white;
+    border-style: solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: overlay;
+    position: relative;
+    top: -215px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: transparent; 
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+    background: white; 
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.945); 
+}
+.divEvents{
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+}
+.evento{
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    color: white;
+    margin: 0;
+}
+.iconoTitle{
+    width: 60px;
+    height: 60px;
+}
+.novedades{
+    width: 380px;
+    height: 206px;
+    margin: 8px auto;
+}
+.newsIcono{
+    width: 40px;
+    height: 40px;
+}
+.eventoTitle{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 5px 10px; 
+    margin: 0;
+}
+.newsTitle{
+    margin: 0;
+}
+.newsDescripcion{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    border-left: 3px solid;
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+    padding: 15px 10px;
+    margin: 0;
+    line-height: 22px;
+    font-weight: 300;
+}/*End of EVENTS*/
+
+
+
+/* REDES SOCIALES */
+.redessociales{
+    background-color: white;
+    width: auto;
+    height: 96px;
+}
+.linea{
+    width: auto;
+    height:5px ;
+    background-color: white;
+}
+.twitter{
+    width: 40px;
+    height: 40px;
+    left: 324px;
+    top: 28px;
+    position: relative;   
+}
+.ig{
+    width: 40px;
+    height: 40px;
+    left: 648px;
+    top: 28px;
+    position: relative;
+}
+.fb{
+    width: 40px;
+    height: 40px;
+    left: 972px;
+    top: 28px;
+    position: relative;  
+}/* End of REDES SOCIALES */
+
+
+
+/*Footer*/
+footer {
+    display: flex;
+    color: #ffffff;
+    background-color: black;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px 0;
+    line-height: 30px;
+    width: 100%;
+    overflow: hidden;
+    justify-content: space-between;
+    border-top: 5px solid white;
+}
+
+#FooterLinks {
+    display: flex;
+}
+
+.footerLinks {
+    margin-right: 20px;
+    text-align: end;
+}
+
+#FooterLeft {
+    position: relative;
+    top: 22px;
+    margin-left: 50px;
+}
+
+#FooterRight {
+    margin-right: 50px;
+}
+
+#FooterLogo {
+    text-decoration: none;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+footer p {
+    text-decoration: underline;
+}/*End of Footer*/
+
