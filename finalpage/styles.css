@@ -2,6 +2,7 @@
 body {
     margin: 0;
     background-color: black;
+    overflow-x: hidden;
 }
 
 p {
@@ -374,8 +375,9 @@ p {
 }
 .paso{
     display: flex;
-    margin-bottom: 130px;
+    padding-bottom: 130px;
     position: relative;
+    width: 40%;
 }
 .Circle{
     width: 80px;
@@ -475,7 +477,7 @@ p {
 
 /*Nav bar 2*/
 #nav2 {
-    margin: 0;
+    margin: 15px 0 0 0;
     position: absolute;
     width: 100%;
     top: 2170px;
@@ -521,6 +523,8 @@ hr {
 #testemonios {
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 50px;
+    margin-top: 20px;
 }
 .fondo{
     background-color: black;
@@ -604,7 +608,25 @@ hr {
     margin-left: 329px;
     margin-top: 155px;
     position: absolute;
-}/* End of TESTIMONIOS */
+}
+#testemonioTitle{
+    display: flex;
+    margin-top: 20px;
+}
+.titleTestimonio{
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    margin: 0;
+    margin-left: 10vw;
+}
+#testemonioTitle hr{
+    height: 3px;
+    width: 70vw;
+    margin: 27px 0 0 10px;
+}
+/* End of TESTIMONIOS */
 
 
 
@@ -694,37 +716,74 @@ hr {
 
 
 
+/*Schools*/
+#bodyBootCamp{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 50px;
+    padding-bottom: 150px;
+}
+#divtitulo{
+    display: flex; 
+}
+.lineaBoot{
+    width: 600px;
+    height: 2px;
+    background-color: white;
+    position: relative;
+    top: 45px;
+    border-color: white;
+}
+#schools{
+    display: flex;
+    justify-content:space-evenly ;
+    margin-top: 60px;
+    align-self: center;
+}
+#h3bootcamp{
+    font-weight: 300px;
+    font-size: 40px;
+    line-height: 28px;
+    text-align: center; 
+}
+.Pbootcamp{
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+.imgschool{
+    width: 180px;
+    height: 180px;
+    margin: 50px 30px;
+    
+}
+.school{
+    width: 250px;
+}/*End of schools*/
+
+
+
 /* REDES SOCIALES */
 .redessociales{
     background-color: white;
-    width: auto;
-    height: 96px;
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    padding: 30px 0;
 }
 .linea{
-    width: auto;
-    height:5px ;
+    width: 100vw;
+    height: 5px;
     background-color: white;
 }
-.twitter{
-    width: 40px;
-    height: 40px;
-    left: 324px;
-    top: 28px;
-    position: relative;   
+.socialIcon{
+    width: 50px;
+    height: 50px;
 }
-.ig{
-    width: 40px;
-    height: 40px;
-    left: 648px;
-    top: 28px;
-    position: relative;
-}
-.fb{
-    width: 40px;
-    height: 40px;
-    left: 972px;
-    top: 28px;
-    position: relative;  
+#redes {
+    padding-bottom: 50px;
 }/* End of REDES SOCIALES */
 
 
@@ -741,34 +800,27 @@ footer {
     width: 100%;
     overflow: hidden;
     justify-content: space-between;
-    border-top: 5px solid white;
 }
-
 #FooterLinks {
     display: flex;
 }
-
 .footerLinks {
     margin-right: 20px;
     text-align: end;
 }
-
 #FooterLeft {
     position: relative;
     top: 22px;
     margin-left: 50px;
 }
-
 #FooterRight {
     margin-right: 50px;
 }
-
 #FooterLogo {
     text-decoration: none;
     font-size: 34px;
     font-weight: bold;
 }
-
 footer p {
     text-decoration: underline;
 }/*End of Footer*/
